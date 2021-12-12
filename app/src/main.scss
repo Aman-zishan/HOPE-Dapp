@@ -1,0 +1,113 @@
+// Import Bulma's core
+@import '~bulma/sass/utilities/_all';
+@import '@hackbg/design-system/dist/default';
+
+$primary-light: findLightColor($primary);
+$primary-dark: findDarkColor($primary);
+$primary-invert: findColorInvert($primary);
+$info-invert: findColorInvert($info);
+$info-light: findLightColor($info);
+$info-dark: findDarkColor($info);
+$success-invert: findColorInvert($success);
+$success-light: findLightColor($success);
+$success-dark: findDarkColor($success);
+$warning-invert: findColorInvert($warning);
+$warning-light: findLightColor($warning);
+$warning-dark: findDarkColor($warning);
+$danger-invert: findColorInvert($danger);
+$danger-light: findLightColor($danger);
+$danger-dark: findDarkColor($danger);
+$light-invert: findColorInvert($light);
+$dark-invert: findColorInvert($dark);
+
+$link: $primary;
+$link-invert: $primary-dark;
+$link-light: $primary-light;
+$link-dark: $primary-dark;
+
+// Lists and maps
+$custom-colors: null !default;
+$custom-shades: null !default;
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: mergeColorMaps(
+  (
+    'white': (
+      $white,
+      $black,
+    ),
+    'black': (
+      $black,
+      $white,
+    ),
+    'light': (
+      $light,
+      $light-invert,
+    ),
+    'dark': (
+      $dark,
+      $dark-invert,
+    ),
+    'primary': (
+      $primary,
+      $primary-invert,
+      $primary-light,
+      $primary-dark,
+    ),
+    'link': (
+      $link,
+      $link-invert,
+      $link-light,
+      $link-dark,
+    ),
+    'info': (
+      $info,
+      $info-invert,
+      $info-light,
+      $info-dark,
+    ),
+    'success': (
+      $success,
+      $success-invert,
+      $success-light,
+      $success-dark,
+    ),
+    'warning': (
+      $warning,
+      $warning-invert,
+      $warning-light,
+      $warning-dark,
+    ),
+    'danger': (
+      $danger,
+      $danger-invert,
+      $danger-light,
+      $danger-dark,
+    ),
+  ),
+  $custom-colors
+);
+
+// Custom
+$desktop: 760px + (2 * $gap);
+
+$link-hover: #AC82EB;
+$link-visited: darken($primary, 30%);
+
+$input-border-color: $primary;
+$input-hover-border-color: $primary;
+$input-placeholder-color: $primary;
+
+$section-padding-desktop: 1.5rem 1.5rem 3rem 1.5rem;
+
+$box-shadow: 0 0.5em 1em -0.125em rgba($dark, 0.2), 0 0px 0 1px rgba($dark, 0.05);
+
+$label-weight: 500;
+
+$modal-card-head-background-color: $light;
+
+$button-focus-box-shadow-size: 0;
+
+// Import Bulma and Buefy styles
+@import '~bulma';
+@import '~buefy/src/scss/buefy';

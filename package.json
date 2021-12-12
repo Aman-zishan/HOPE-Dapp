@@ -1,0 +1,21 @@
+{
+  "name": "smart-charity",
+  "version": "0.0.2",
+  "description": "",
+  "scripts": {
+    "test": "truffle test"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.0",
+    "@openzeppelin/test-environment": "^0.1.9",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "chai": "^4.3.4",
+    "eslint-plugin-vue": "^8.2.0",
+    "lodash": "^4.17.21"
+  },
+  "license": "MIT",
+  "author": "Ivelin Mollov",
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^2.0.0"
+  }
+}
